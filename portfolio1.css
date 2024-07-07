@@ -1,0 +1,358 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+body{
+  background-color: #000;
+  color:rgb(21, 212, 63);
+}
+.box{
+    height: auto;
+    width:100% ;
+    background-color: rgb(0, 0, 0);
+    box-sizing: content-box;
+    
+    display:flex;
+}
+
+.parent{
+    padding-top:8rem;
+    height: auto;
+    width: 75vw;
+    color: rgb(17, 124, 40);
+    padding-bottom: 0rem;
+}
+
+.nav{
+  margin:0rem;
+  padding: 1rem;
+  text-align: center;
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   justify-content: space-evenly;
+   background-color: rgb(9, 142, 40);
+   color:black;
+   width: 72%;
+   position: fixed;
+   top:0;
+   right: 0;
+}
+
+.nav a{
+  padding: 3rem;
+}
+
+.box1{
+    height: 80vh;
+    width: 25vw;
+    background-color: rgb(9, 142, 40);
+    box-sizing: content-box;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.box1 h1{
+  background-color: black;
+  color: rgb(10, 232, 59);
+  
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 4rem;
+}
+
+.box1 a{
+    font-size: 30px;
+    text-decoration: none;
+    color:black;
+    margin: 2rem;
+}
+
+a :hover{
+ text-shadow: 3px 3px;
+  color:rgb(122, 114, 114);
+}
+
+.box1 :hover{
+  text-shadow: 3px 3px;
+   color:rgb(122, 114, 114);
+ }
+
+.box2{
+   
+    width: 75vw;
+    box-sizing: content-box;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    color:white;
+    background-color: black;
+}
+div h1{
+  margin-bottom: 2rem;
+  text-align: center;
+  color:rgb(10, 232, 59);
+}
+
+button{
+    font-size: 30px;
+    text-decoration: none;
+    background-color: rgb(10, 232, 59);
+    color:black;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 2px red;
+    color: #999;
+}
+
+.highlite{
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: left;
+    margin-left: 80px;
+    color: rgb(10, 232, 59);
+}
+
+.high{
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: left;
+   color: rgb(10, 232, 59);
+}
+
+.p1{
+    text-align: start;
+    font-size: 24px;
+}
+
+p{
+  padding: 9px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.image{
+    margin-right: 2rem;
+    border-radius: 200px;
+    border: 0.4rem solid rgb(10, 232, 59);
+}
+
+.image1{
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  border: 0.4rem solid rgb(10, 232, 59);
+}
+
+/*form*/
+
+h3{
+    font-size: 3rem;
+}
+
+form {
+    display: inline-block;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid green;
+    border-radius: 1em;
+    color:rgb(10, 232, 59);
+    font-size: 1.5rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+    
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+    /* Match form field borders */
+    border: 1px solid #999;
+    background-color:rgb(10, 232, 59) ;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+
+/*---*/
+
+  .box2-project {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .projectContainer {
+    height: 23rem;
+    width: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: space-evenly;
+    overflow-x: auto;
+    
+  }
+
+  .projectContainer::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .projectContainer .project {
+    height: 27rem;
+    width: 350px;
+  
+    text-align: center;
+    color: aqua;
+    margin-right: 5px;
+    background-color: #222121c4;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    font-size: medium;
+    flex-direction: column;
+    /* justify-content:; */
+  }
+
+  .project p {
+    font-size: 16px;
+    color: aqua;
+  }
+  
+  .project img {
+    height: 15rem;
+    align-self: center;
+    justify-self: center;
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+
+  .project:hover {
+    background-color: rgba(0, 255, 255, 0.363);
+  }
+
+
+  /*---*/
+  .box2skill {
+    text-align: center;
+  }
+  
+  .skillContainer {
+    height: auto;
+    width: auto;
+    /* width: 100%; */
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-content: space-evenly;
+    overflow-x: auto;
+    
+  }
+  .skillContainer::-webkit-scrollbar {
+    width: 0;
+    color: rgb(53, 63, 63);
+  }
+  .skillContainer .skills {
+    height: 20rem;
+    width: 20rem;
+    text-align: center;
+    color: rgb(96, 103, 103);
+    margin-right: 5px;
+    background-color: #2d2c2cc4;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+  }
+  .skills img {
+    height: 20rem;
+   
+    /* align-self: center;
+    justify-self: center; */
+    width: 350px;
+    background-size: cover;
+    /* margin-bottom: 10px; */
+    border-radius: 50%;
+  }
+
+  .skills p{
+    color: rgb(233, 19, 19);
+    margin: 0;
+    padding: 0;
+  }
+  hr {
+    background-color: rgb(104, 120, 115);
+  }
+  .footer{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: x-large;
+    background-color: rgb(9, 142, 40) ;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .footer div{
+    width:50%;
+    height:auto;
+    font-size: 2rem;
+    color: black;
+    
+  }
+
+  .footer div a{
+    margin-left: 8rem;
+    text-decoration: none;
+    
+  }
+  .foot{
+    padding: 2rem;
+  }
